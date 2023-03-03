@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Merriweather+Sans:wght@800&family=Roboto:wght@900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.text{
+    text-transform: uppercase;
+    font:bold 12rem 'Merriweather Sans', Sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-image:url("/assets/img/back.png");
+    background-size: cover;
+    
+    -webkit-background-clip: text;
+  /*   -webkit-text-fill-color: transparent; */
+    color: transparent;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#btnEnter {
+    border: 1px black solid;
+    padding: 1%;
+    margin:10px;
+    background-color: pink;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#background {
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#dustbin {
+    width: 2%;
+}
+
+main#movies {
+    display: flex;
+    margin: 2%;
+}
+
+#list {
+    flex: 2;
+}
+
+#list h2 {
+    margin-bottom: 5%;
+}
+
+#list ol {
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+#list ol li:hover {
+    /* font-size:xx-large; */
+    font-weight: 900;
+}
+
+p#fleche {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 7%;
+    padding-right:50%;
+}
+
+p#fleche span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#list #btnEnter {
+    margin-left: 5%;
+}
+
+#detail {
+    flex: 2;
+}
+
+a#delete {
+    color: rgb(222, 45, 86);
+    font-weight: bolder;
+
+}

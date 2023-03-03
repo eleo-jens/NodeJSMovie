@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src='./fetchDetails.js'></script>
+    <script src='./fillList.js' defer></script>
+    <link rel='stylesheet' href='./style/style.css'>
+</head>
+
+<body>
+    <main id="movies">
+        <div id="list">
+            <h2>Top movies</h2>
+            <ol>
+                <% for (var i=1; i <=25; i++ ) { %>
+                    <li>
+                        <a href="javascript:getDetailsMovie('<%= movies[i]._id  %>')">
+                            <%= movies[i].Series_Title %>
+                        </a>
+                    </li>
+                    <% } %>
+            </ol>
+            <p id="fleche"><span id="first"><<</span><span id="previous"><</span><span id="next">></span><span id="last">>></span></p>
+            <a href='/createMovie.html' id='btnEnter'>Ajouter un film</a>
+        </div>
+        <div id='detail'></div>
+    </main>
+</body>
+
+</html>
